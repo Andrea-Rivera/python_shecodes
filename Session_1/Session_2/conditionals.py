@@ -93,7 +93,7 @@ else:
 
 
 email = input("Please enter your Email:")
-if "@" in email:
+if "@" and "." in email:
     print ("valid email")
 else:
     print ("Invalid Email detected!")
