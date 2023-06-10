@@ -92,7 +92,7 @@
 # user_number = input("Enter a number: ")
 # user_number =int(user_number)
 
-# for number in range(0,11):
+# for number in range(1,11):
 #     print(f"{user_number} * {number} =  {user_number*number}")
 
 ####Q2#######

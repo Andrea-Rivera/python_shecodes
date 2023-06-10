@@ -73,4 +73,3 @@ def groceries(price, quantity):
     return price * quantity
 
 print(f"$ {groceries(1.49 , 7)}")
-
