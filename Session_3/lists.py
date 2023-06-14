@@ -1,32 +1,32 @@
 # Store multiple data points
-# list_name = [1,2,3,"Asli", []]
-# print(list_name)
-# print (type(list_name))
+list_name = [1,2,3,"Asli", []]
+print(list_name)
+print (type(list_name))
 
 
 digits=[1,2,3,4,5]
-# print(digits[4])
+print(digits[4])
 
 # #Slicing
-# print(digits[0:5])
-# print(digits[0:5:2])
+print(digits[0:5])
+print(digits[0:5:2])
 
 # # len
-# print(len(digits))
+print(len(digits))
 
 # # adding elements
-# digits.append(6)
-# print(digits)
+digits.append(6)
+print(digits)
 
 # pop in the index you want to remove. By default is will remove the last index
-# digits.pop()
-# print(digits)
+digits.pop()
+print(digits)
 
 
 # popped_element  = digits.pop(0)
-# print (digits)
-# digits.pop(0)
-# print(digits)
+print (digits)
+digits.pop(0)
+print(digits)
 
 ####NESTED LIST
 letters = ["a","b","c","d", ["Emily", "Julie"]]
@@ -38,18 +38,16 @@ if 'a' in letters:
     print("It is in the list")
 
 
-##LIST EXERCISES#####
-foods = ["orange",
-         "apple",
-         "banana",
-         "strawberry",
-         "grape",
-         "blueberry",    
-         ["carrot", "cauliflower", "pumpkin"],
-         "passionfruit",
-         "mango",
-         "kiwifruit"
-         ]
+######################################EXERCISES##############################
+########Q1###########
+##Given the list of foods below, print:
+#The first item in the list
+#The third item in the list
+#The last item in the list
+#The first three items in the list
+#The last three items in the list
+#The last item in the sublist
+foods = ["orange", "apple", "banana","strawberry", "grape", "blueberry", ["carrot", "cauliflower", "pumpkin"],"passionfruit","mango","kiwifruit"]
 
 print("FOOD EXERCISE")
 print (foods[0])
@@ -60,14 +58,16 @@ print(foods[-3:10])
 print(foods[6][-1])
 
 
-####    Q2#####
+####Q2#####
+###Format and print the contents of the following 
+# list so that the output appears asdepicted:
 mambo = [ ["Monica", "in my life"],    
- ["Erica", "by my side"],    
- ["Rita's", "all I need"],    
- ["Tina's", "what I see"],    
- ["Sandra", "in the sun"],    
- ["Mary", "having fun"],    
- ["Jessica", "here I am"]]
+["Erica", "by my side"],    
+["Rita's", "all I need"],    
+["Tina's", "what I see"],    
+["Sandra", "in the sun"],    
+["Mary", "having fun"],    
+["Jessica", "here I am"]]
 
 print (f"A little bit of {mambo[0][0]} {mambo[0][1]}")
 print (f"A little bit of {mambo[1][0]} {mambo[1][1]}")
@@ -80,6 +80,8 @@ print("A little bit of you makes me your man (ah!)")
 print("*trumpet solo*")
 
 ####  Q3#####
+###Ask the user for three names. 
+# Add each name to a list, and then print the list
 
 name1 = input ("Please enter a name: ")
 name2 = input ("Please enter second a name: ")
@@ -92,14 +94,15 @@ names.append(name3)
 print (names)
 
 ######Q4###########
-
+#Using the following starter code:
 a = [1, 2, 3]
 b = [4, 5, 6]
 c = [7, 8, 9]
 d = []
 e = []
 
-
+#Print the following lists:
+#[[1, 2, 3], [4, 5, 6], [7, 8, 9]][1, 2, 3, 4, 5, 6, 7, 8, 9]
 print (f"{a},{b},{c}")
 print (a+b+c)
 
