@@ -37,23 +37,23 @@ import csv
     #  line of the colourdata one by one as a string. Use spaces to 
     # separate the columns insead of commas.
 
-with open("/Users/andrearivera/Desktop/SheCodes/python_shecodes/Session6/colours_20_simple.csv") as colours:
+# with open("/Users/andrearivera/Desktop/SheCodes/python_shecodes/Session6/colours_20_simple.csv") as colours:
  
-    for colour in colours:
-    # Each row in the data gets converted into a list.
-        print(colour)
+    # for colour in colours:
+    # # Each row in the data gets converted into a list.
+    #     print(colour)
 
 ##################Q2####################
 #Write a program that reads in colours_20_simple.csv and outputs the colour 
 #data inorder English, Hex then RGB, like so:
 
-with open("/Users/andrearivera/Desktop/SheCodes/python_shecodes/Session6/colours_20_simple.csv", encoding="utf-8") as colours:
+# with open("/Users/andrearivera/Desktop/SheCodes/python_shecodes/Session6/colours_20_simple.csv", encoding="utf-8") as colours:
  
-    reader = csv.reader(colours)
-   # loop time!
-    for colour in reader:
-    # Each row in the data gets converted into a list.
-        print(f"{colour[2]}, Hex: {colour[1]}, RGB: {colour[0]}")
+#     reader = csv.reader(colours)
+#    # loop time!
+#     for colour in reader:
+#     # Each row in the data gets converted into a list.
+#         print(f"{colour[2]}, Hex: {colour[1]}, RGB: {colour[0]}")
 
 #################Q3####################
 #Write a program that takes a csv file describing colours, 
@@ -97,15 +97,33 @@ with open("/Users/andrearivera/Desktop/SheCodes/python_shecodes/Session6/colours
 # with the slowest velocity, and another showing the galaxy with the highest 
 # velocity
 
-with open("/Users/andrearivera/Desktop/SheCodes/python_shecodes/Session6/galaxies.csv", encoding="utf-8") as galaxies:
+# with open("/Users/andrearivera/Desktop/SheCodes/python_shecodes/Session6/galaxies.csv", encoding="utf-8") as galaxies:
  
-    reader = csv.reader(galaxies)
-    velocity=[]
+#     reader = csv.reader(galaxies)
+#     velocity=[]
 
-    for galaxy in reader:
-        number =int(galaxy[1])
-        velocity.append(number)
-    print(velocity)
-    print(f"Galaxy {velocity.index(min(velocity))+1} has the min velocity of {min(velocity)}")
-    print(f"Galaxy {velocity.index(max(velocity))+1} has the max velocity of {max(velocity)}")
+#     for galaxy in reader:
+#         number =int(galaxy[1])
+#         velocity.append(number)
+#     print(velocity)
+#     print(f"Galaxy {velocity.index(min(velocity))+1} has the min velocity of {min(velocity)}")
+#     print(f"Galaxy {velocity.index(max(velocity))+1} has the max velocity of {max(velocity)}")
   
+
+
+############################
+# def load_data_from_csv(csv_file):
+#     """Reads a csv file and stores the data in a list.
+
+#     Args:
+#         csv_file: a string representing the file path to a csv file.
+#     Returns:
+#         A list of lists, where each sublist is a (non-empty) line in the csv file.
+#     """
+#     with open("/Users/andrearivera/Desktop/SheCodes/python_shecodes/Session6/galaxies.csv", encoding="utf-8") as weather:
+#         reader = csv.reader(weather)
+#         weather_data=[]
+#         for item in reader:
+#             weather_data.append(item)
+#         print(weather_data)
+
