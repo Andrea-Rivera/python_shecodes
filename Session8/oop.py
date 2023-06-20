@@ -83,11 +83,23 @@ class Rectangle:
     def area(self):
         return self.height * self.width
 
+    def perimeter(self):
+        return 2*(self.height+self.width)
+    
+    def diagonal(self):
+        return self.height**2+self.width**2
+    
+    def isSquare(self):
+        if self.height==self.width:
+            return True
+        else:
+            return False
+
     def __str__(self):
-        return f"Rectangle area: {self.area()}"
+        return f"Rectangle area: {self.area()} perimeter:  {self.area()} diagonal:  {self.perimeter()} is a square?  {self.isSquare()}  "
     
 rectangle1= Rectangle(12,34)
 print(rectangle1)
-print(rectangle1.area())
+#print(rectangle1.area())
 
 
